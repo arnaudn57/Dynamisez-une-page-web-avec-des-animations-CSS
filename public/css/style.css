@@ -210,4 +210,9 @@ nav i {
   visibility: visible;
 }
 
+.menu-header img {
+  width: 100%;
+  object-fit: cover;
+}
+
 /*# sourceMappingURL=style.css.map */

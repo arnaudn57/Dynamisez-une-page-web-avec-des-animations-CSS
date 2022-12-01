@@ -15,3 +15,13 @@ nav {
       visibility: visible; ;
     }
 }
+
+// MENU-HEADER
+
+.menu-header {
+  // position: relative;
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
