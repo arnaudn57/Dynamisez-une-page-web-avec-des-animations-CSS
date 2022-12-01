@@ -41,6 +41,7 @@ nav a img {
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: 250px;
   justify-content: center;
   background-color: rgb(247, 247, 247);
 }
@@ -60,12 +61,51 @@ nav a img {
 /* FONCTIONNEMENT */
 .fonctionnements {
   background-color: rgb(255, 255, 255);
+  width: 90%;
+  margin: 0 auto;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .fonctionnements .fonctionnements-container {
   display: flex;
   justify-content: center;
   text-align: center;
   flex-direction: column;
+  gap: 10px;
+}
+.fonctionnements .fonctionnement-container-step {
+  background-color: rgb(247, 247, 247);
+  border-radius: 20px;
+  height: 70px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 6px 7px 7px 1px rgba(0, 0, 0, 0.12);
+}
+.fonctionnements .fonctionnement-container-step:hover {
+  background-color: #9356DC;
+  opacity: 0.3;
+  color: black;
+}
+.fonctionnements .fonctionnement-container-step .fonctionnement-container-step-content {
+  display: flex;
+  width: 70%;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.fonctionnements .fonctionnement-container-step .badge {
+  position: absolute;
+  top: 20px;
+  left: -10px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: white;
 }
 
 /* RESTAURANTS */
@@ -76,10 +116,61 @@ nav a img {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
 }
 .restaurants .restaurant {
-  width: 50%;
+  width: 100%;
+}
+
+.card-container {
+  width: 100%;
   margin: 0 auto;
+  background-color: white;
+  border-radius: 20px;
+}
+.card-container .card-img img {
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  position: relative;
+  height: 250px;
+}
+.card-container .card-img {
+  position: relative;
+}
+.card-container .card-img .badge-restaurant {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: rgb(169, 224, 209);
+  color: rgb(58, 142, 114);
+  padding: 5px;
+  border: 1px solid rgb(58, 142, 114);
+  border-radius: 3px;
+}
+.card-container .card-infos {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 90%;
+}
+.card-container .card-infos .card-desc {
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card-container .card-infos .card-fav {
+  display: flex;
+  align-items: center;
+}
+.card-container .card-infos .card-fav:active {
+  color: red;
+}
+.card-container .card-infos .card-fav i {
+  font-size: 30px;
 }
 
 /* ***FOOTER**** */
