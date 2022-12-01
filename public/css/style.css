@@ -118,6 +118,10 @@ nav a img {
   flex-direction: column;
   width: 90%;
   margin: 0 auto;
+  gap: 20px;
+}
+.restaurants h2 {
+  margin-top: 40px;
 }
 .restaurants .restaurant {
   width: 100%;
@@ -135,7 +139,7 @@ nav a img {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   position: relative;
-  height: 250px;
+  height: 210px;
 }
 .card-container .card-img {
   position: relative;
