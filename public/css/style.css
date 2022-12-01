@@ -7,75 +7,7 @@
   box-sizing: inherit;
 }
 
-/* **** GENERAL **** */
-body {
-  margin: 0 auto;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
-}
-
-/* **** HEADER **** */
-/* NAVBAR */
-nav {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  height: 50px;
-  align-items: center;
-}
-nav a img {
-  width: 50%;
-}
-
-/* **** MAIN **** */
-/* HEADLINE */
-.headline .headline-localisation {
-  background-color: rgb(234, 234, 234);
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-}
-.headline .headline-search {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 250px;
-  justify-content: center;
-  background-color: rgb(247, 247, 247);
-}
-.headline .headline-search-container {
-  text-align: center;
-  width: 70%;
-  margin: 0 auto;
-}
-.headline .headline-search-container button {
-  background: linear-gradient(0deg, rgb(147, 86, 220) 35%, rgb(255, 121, 218) 100%);
-  color: white;
-  border: none;
-  padding: 15px;
-  border-radius: 50px;
-}
-
-/* FONCTIONNEMENT */
-.fonctionnements {
-  background-color: rgb(255, 255, 255);
-  width: 90%;
-  margin: 0 auto;
-  height: 350px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-.fonctionnements .fonctionnements-container {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-  gap: 10px;
-}
-.fonctionnements .fonctionnement-container-step {
+.fonctionnement-container-step {
   background-color: rgb(247, 247, 247);
   border-radius: 20px;
   height: 70px;
@@ -87,18 +19,18 @@ nav a img {
   align-items: center;
   box-shadow: 6px 7px 7px 1px rgba(0, 0, 0, 0.12);
 }
-.fonctionnements .fonctionnement-container-step:hover {
+.fonctionnement-container-step:hover {
   background-color: #9356DC;
   opacity: 0.3;
   color: black;
 }
-.fonctionnements .fonctionnement-container-step .fonctionnement-container-step-content {
+.fonctionnement-container-step .fonctionnement-container-step-content {
   display: flex;
   width: 70%;
   justify-content: flex-start;
   gap: 20px;
 }
-.fonctionnements .fonctionnement-container-step .badge {
+.fonctionnement-container-step .badge {
   position: absolute;
   top: 20px;
   left: -10px;
@@ -106,25 +38,6 @@ nav a img {
   border-radius: 50%;
   background-color: #9356DC;
   color: white;
-}
-
-/* RESTAURANTS */
-.restaurants {
-  background-color: rgb(247, 247, 247);
-}
-.restaurants .restaurants-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 90%;
-  margin: 0 auto;
-  gap: 20px;
-}
-.restaurants h2 {
-  margin-top: 40px;
-}
-.restaurants .restaurant {
-  width: 100%;
 }
 
 .card-container {
@@ -177,7 +90,6 @@ nav a img {
   font-size: 30px;
 }
 
-/* ***FOOTER**** */
 footer {
   display: flex;
   flex-direction: column;
@@ -189,6 +101,113 @@ footer svg path {
 footer a {
   color: white;
   text-decoration: white;
+}
+
+/* **** GENERAL **** */
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/* **** HEADER **** */
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 50px;
+  align-items: center;
+}
+nav a img {
+  width: 50%;
+}
+nav i {
+  visibility: hidden;
+}
+
+/* **** MAIN **** */
+/* HEADLINE */
+.headline .headline-localisation {
+  background-color: rgb(234, 234, 234);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.headline .headline-search {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 250px;
+  justify-content: center;
+  background-color: rgb(247, 247, 247);
+}
+.headline .headline-search-container {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+.headline .headline-search-container button {
+  background: linear-gradient(0deg, rgb(147, 86, 220) 35%, rgb(255, 121, 218) 100%);
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 50px;
+}
+
+/* FONCTIONNEMENT */
+.fonctionnements {
+  background-color: rgb(255, 255, 255);
+  width: 90%;
+  margin: 0 auto;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.fonctionnements .fonctionnements-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* RESTAURANTS */
+.restaurants {
+  background-color: rgb(247, 247, 247);
+}
+.restaurants .restaurants-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  gap: 20px;
+}
+.restaurants h2 {
+  margin-top: 40px;
+}
+.restaurants .restaurant {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav .nav-menu {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  color: black;
+  align-items: center;
+  width: 80%;
+}
+nav i {
+  visibility: visible;
 }
 
 /*# sourceMappingURL=style.css.map */

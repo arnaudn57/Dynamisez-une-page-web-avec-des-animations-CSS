@@ -1,0 +1,55 @@
+.card-container {
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 20px;
+
+  .card-img img{
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: relative;
+    height: 210px;
+  }
+
+  .card-img {
+    position: relative;
+
+    .badge-restaurant {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: rgb(169, 224, 209);
+      color: rgb(58, 142, 114);
+      padding: 5px;
+      border: 1px solid rgb(58, 142, 114);
+      border-radius: 3px;
+    }
+  }
+
+  .card-infos {
+   display: flex;
+   justify-content: space-between;
+   margin: 0 auto;
+   width: 90%;
+
+    .card-desc {
+      height: 70px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .card-fav {
+      display: flex;
+      align-items: center;
+      &:active {
+        color: red;
+      }
+      i {
+        font-size: 30px;
+      }
+    }
+  }
+}

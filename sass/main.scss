@@ -1,5 +1,11 @@
 @import "./base/base";
 @import "./base/typography";
 
+// COMPONENTS
+@import "./components/_card-fonctionnement";
+@import "./components/card-restaurant";
+@import "./components/_footer";
 
+// PAGES
 @import "./pages/accueil";
+@import "./pages/menu";

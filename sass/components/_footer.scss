@@ -1,0 +1,14 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(53, 53, 53);
+
+  svg path {
+    fill: white;
+  }
+
+  a {
+    color: white;
+    text-decoration: white;
+  }
+}
