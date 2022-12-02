@@ -17,11 +17,117 @@ nav {
 }
 
 // MENU-HEADER
+.menu-header img{
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 
-.menu-header {
-  // position: relative;
-  img {
-    width: 100%;
-    object-fit: cover;
+.menu {
+  background-color: rgb(247, 247, 247);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  margin-top: -55px;
+  position: relative;
+  width: 100%;
+}
+
+.menu-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.menu-container-head {
+  display:flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  align-items: center;
+
+  h1 {
+    font-family: 'Shrikhand';
+  }
+
+  i {
+    font-size: 35px;
+    font-weight: 100;
+  }
+}
+
+.menu-parts {
+  h2 {
+    font-weight: 100;
+  }
+
+  hr{
+   width: 40px;
+   height: 2px;
+   background-color: rgb(169, 224, 209);
+   border: none;
+ }
+}
+
+
+.menu-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+}
+.card-menu {
+  background-color: white;
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  box-shadow: 6px 7px 7px 1px rgba(0,0,0,0.12);
+
+}
+
+.card-menu-content {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  .card-menu-infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+      font-weight: 100;
+    }
+  }
+
+  .card-menu-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 55px;
+  }
+
+  .anim {
+    display: none;
+    background-color: green;
+    width: 20%;
+    transition: 0.5s;
+    animation: slideRight 2s;
+
+  }
+
+  &:hover .anim {
+    display: block;
+    // transform: scale(1.1) rotate(10deg);
+  }
+
+  @keyframes slideRight {
+    from {
+      transform: translateX(10px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0px);
+      opacity: 1;
+    }
   }
 }
