@@ -11,6 +11,19 @@
   box-sizing: inherit;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(53, 53, 53);
+}
+footer svg path {
+  fill: white;
+}
+footer a {
+  color: white;
+  text-decoration: white;
+}
+
 .fonctionnement-container-step {
   background-color: rgb(247, 247, 247);
   border-radius: 20px;
@@ -94,17 +107,12 @@
   font-size: 30px;
 }
 
-footer {
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(53, 53, 53);
-}
-footer svg path {
-  fill: white;
-}
-footer a {
+.btn {
+  background: linear-gradient(0deg, rgb(147, 86, 220) 35%, rgb(255, 121, 218) 100%);
   color: white;
-  text-decoration: white;
+  border: none;
+  padding: 15px;
+  border-radius: 50px;
 }
 
 /* **** GENERAL **** */
@@ -152,13 +160,6 @@ nav i {
   text-align: center;
   width: 70%;
   margin: 0 auto;
-}
-.headline .headline-search-container button {
-  background: linear-gradient(0deg, rgb(147, 86, 220) 35%, rgb(255, 121, 218) 100%);
-  color: white;
-  border: none;
-  padding: 15px;
-  border-radius: 50px;
 }
 
 /* FONCTIONNEMENT */

@@ -1,14 +1,23 @@
 @import "./base/base";
 @import "./base/typography";
 
+
+// LAYOUTS
+@import "./layouts/_footer";
+
+
+// UTILS
+@import "./utils/_variables";
+
+
 // COMPONENTS
 @import "./components/_card-fonctionnement";
-@import "./components/card-restaurant";
-@import "./components/_footer";
+@import "./components/_card-restaurant";
+@import "./components/_button";
 
 // PAGES
-@import "./pages/accueil";
-@import "./pages/menu";
+@import "./pages/_accueil";
+@import "./pages/_menu";
 
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
