@@ -24,39 +24,6 @@ footer a {
   text-decoration: white;
 }
 
-.fonctionnement-container-step {
-  background-color: rgb(247, 247, 247);
-  border-radius: 20px;
-  height: 70px;
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 6px 7px 7px 1px rgba(0, 0, 0, 0.12);
-}
-.fonctionnement-container-step:hover {
-  background-color: #9356DC;
-  opacity: 0.3;
-  color: black;
-}
-.fonctionnement-container-step .fonctionnement-container-step-content {
-  display: flex;
-  width: 70%;
-  justify-content: flex-start;
-  gap: 20px;
-}
-.fonctionnement-container-step .badge {
-  position: absolute;
-  top: 20px;
-  left: -10px;
-  padding: 5px 10px;
-  border-radius: 50%;
-  background-color: #9356DC;
-  color: white;
-}
-
 .card-container {
   width: 100%;
   margin: 0 auto;
@@ -140,7 +107,7 @@ nav i {
 
 /* **** MAIN **** */
 /* HEADLINE */
-.headline .headline-localisation {
+.headline__localisation {
   background-color: rgb(234, 234, 234);
   height: 50px;
   display: flex;
@@ -148,7 +115,7 @@ nav i {
   text-align: center;
   flex-direction: column;
 }
-.headline .headline-search {
+.headline__search {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -156,7 +123,7 @@ nav i {
   justify-content: center;
   background-color: rgb(247, 247, 247);
 }
-.headline .headline-search-container {
+.headline__search-container {
   text-align: center;
   width: 70%;
   margin: 0 auto;
@@ -172,19 +139,51 @@ nav i {
   flex-direction: column;
   justify-content: space-evenly;
 }
-.fonctionnements .fonctionnements-container {
+.fonctionnements__container {
   display: flex;
   justify-content: center;
   text-align: center;
   flex-direction: column;
   gap: 10px;
 }
+.fonctionnements__container-step {
+  background-color: rgb(247, 247, 247);
+  border-radius: 20px;
+  height: 70px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 6px 7px 7px 1px rgba(0, 0, 0, 0.12);
+}
+.fonctionnements__container-step:hover {
+  background-color: #9356DC;
+  opacity: 0.3;
+  color: black;
+}
+.fonctionnements__container-step__container-step-content {
+  display: flex;
+  width: 70%;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.fonctionnements__container-step .badge {
+  position: absolute;
+  top: 20px;
+  left: -10px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: white;
+}
 
 /* RESTAURANTS */
 .restaurants {
   background-color: rgb(247, 247, 247);
 }
-.restaurants .restaurants-container {
+.restaurants__container {
   display: flex;
   justify-content: center;
   flex-direction: column;
