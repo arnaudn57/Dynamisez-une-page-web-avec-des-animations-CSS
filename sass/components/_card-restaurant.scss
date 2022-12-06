@@ -44,12 +44,9 @@
     .card-fav {
       display: flex;
       align-items: center;
-      &:active {
-        color: red;
-      }
-      i {
-        font-size: 30px;
-      }
+      // i {
+      //   font-size: 30px;
+      // }
     }
   }
 }

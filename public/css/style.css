@@ -12,9 +12,15 @@
 }
 
 footer {
+  background-color: rgb(53, 53, 53);
+  width: 100%;
+}
+footer .footer-container {
+  width: 90%;
   display: flex;
   flex-direction: column;
-  background-color: rgb(53, 53, 53);
+  margin-left: 5%;
+  gap: 5px;
 }
 footer svg path {
   fill: white;
@@ -67,12 +73,6 @@ footer a {
   display: flex;
   align-items: center;
 }
-.card-container .card-infos .card-fav:active {
-  color: red;
-}
-.card-container .card-infos .card-fav i {
-  font-size: 30px;
-}
 
 .btn {
   background: linear-gradient(0deg, rgb(147, 86, 220) 35%, rgb(255, 121, 218) 100%);
@@ -80,6 +80,15 @@ footer a {
   border: none;
   padding: 15px;
   border-radius: 50px;
+  font-family: "Roboto", sans-serif;
+}
+
+.heart-btn {
+  font-size: 30px;
+}
+.heart-btn:hover {
+  font-weight: bolder;
+  color: red;
 }
 
 /* **** GENERAL **** */
@@ -115,6 +124,9 @@ nav i {
   text-align: center;
   flex-direction: column;
 }
+.headline__localisation i {
+  margin-right: 15px;
+}
 .headline__search {
   display: flex;
   flex-direction: column;
@@ -127,6 +139,16 @@ nav i {
   text-align: center;
   width: 70%;
   margin: 0 auto;
+}
+.headline__search-container h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+.headline__search-container p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 /* FONCTIONNEMENT */
@@ -163,13 +185,16 @@ nav i {
   opacity: 0.3;
   color: black;
 }
-.fonctionnements__container-step__container-step-content {
+.fonctionnements__container-step i {
+  color: rgb(126, 126, 126);
+}
+.fonctionnements__container-step-content {
   display: flex;
   width: 70%;
   justify-content: flex-start;
-  gap: 20px;
+  gap: 20%;
 }
-.fonctionnements__container-step .badge {
+.fonctionnements .badge {
   position: absolute;
   top: 20px;
   left: -10px;
@@ -182,6 +207,7 @@ nav i {
 /* RESTAURANTS */
 .restaurants {
   background-color: rgb(247, 247, 247);
+  padding-bottom: 70px;
 }
 .restaurants__container {
   display: flex;
@@ -196,6 +222,8 @@ nav i {
 }
 .restaurants .restaurant {
   width: 100%;
+  box-shadow: 6px 7px 7px 1px rgba(0, 0, 0, 0.12);
+  border-radius: 20px;
 }
 
 a {

@@ -30,12 +30,16 @@ nav {
 /* HEADLINE */
 .headline {
   &__localisation {
-    background-color: rgb(234, 234, 234);
+    background-color: $bg-grey;
     height: 50px;
     display: flex;
     justify-content: center;
     text-align: center;
     flex-direction: column;
+
+    i {
+      margin-right : 15px;
+    }
   }
 
   &__search {
@@ -44,14 +48,25 @@ nav {
     width: 100%;
     height: 250px;
     justify-content: center;
-    background-color: rgb(247, 247, 247);
+    background-color: $bg-white;
   }
 
   &__search-container {
     text-align: center;
     width: 70%;
     margin: 0 auto;
+    h2 {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+    }
+    p {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
   }
+
 }
 
 
@@ -73,8 +88,8 @@ nav {
       gap: 10px;
     }
     &__container-step {
-    background-color: rgb(247, 247, 247);
-    border-radius: 20px;
+    background-color: $bg-white;
+    border-radius: $border-radius-card;
     height: 70px;
     width: 100%;
     margin: 0 auto;
@@ -82,27 +97,32 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 6px 7px 7px 1px rgba(0,0,0,0.12);
+    box-shadow: $box-shadow;
     &:hover {
       background-color: #9356DC;
       opacity: 0.3;
       color: black;
     }
-    &__container-step-content {
-      display: flex;
-      width: 70%;
-      justify-content: flex-start;
-      gap: 20px;
+    i {
+      color: rgb(126, 126, 126);
     }
-    .badge {
-      position: absolute;
-      top: 20px;
-      left: -10px;
-      padding: 5px 10px;
-      border-radius: 50%;
-      background-color: #9356DC;
-      color: white;
-    }
+
+  }
+
+  &__container-step-content {
+    display: flex;
+    width: 70%;
+    justify-content: flex-start;
+    gap: 20%;
+  }
+  .badge {
+    position: absolute;
+    top: 20px;
+    left: -10px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    background-color: #9356DC;
+    color: white;
   }
 }
 
@@ -110,8 +130,8 @@ nav {
 
 /* RESTAURANTS */
 .restaurants {
-  background-color: rgb(247, 247, 247);
-
+  background-color: $bg-white;
+  padding-bottom: 70px;
   &__container {
     display: flex;
     justify-content: center;
@@ -127,5 +147,7 @@ nav {
 
   .restaurant {
     width: 100%;
+    box-shadow: $box-shadow;
+    border-radius: $border-radius-card;
   }
 }

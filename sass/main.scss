@@ -8,11 +8,13 @@
 
 // UTILS
 @import "./utils/_variables";
+@import "./utils/_mixins";
 
 
 // COMPONENTS
 @import "./components/_card-restaurant";
 @import "./components/_button";
+@import "./components/_heart";
 
 // PAGES
 @import "./pages/_accueil";
