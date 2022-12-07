@@ -88,7 +88,9 @@ footer a {
 }
 .heart-btn:hover {
   font-weight: bolder;
-  color: red;
+  background: linear-gradient(0deg, rgb(147, 86, 220) 35%, rgb(255, 121, 218) 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 /* **** GENERAL **** */
