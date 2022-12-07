@@ -36,17 +36,13 @@
 
     .card-desc {
       height: 70px;
-      display: flex;
-      flex-direction: column;
+      @include flex-column;
       justify-content: center;
     }
 
     .card-fav {
       display: flex;
       align-items: center;
-      // i {
-      //   font-size: 30px;
-      // }
     }
   }
 }
