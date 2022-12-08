@@ -125,6 +125,16 @@ nav .arrow-header {
   }
 }
 
+@keyframes appear {
+  0% {
+    transform: scale(0);
+    filter: blur(4px);
+  }
+  100% {
+    transform: scale(1);
+    filter: blur(0);
+  }
+}
 .card-container {
   width: 100%;
   margin: 0 auto;
@@ -405,6 +415,38 @@ nav i {
   justify-content: space-between;
   height: 70px;
   box-shadow: 6px 7px 7px 1px rgba(0, 0, 0, 0.12);
+  animation: appear 1s;
+  animation-fill-mode: boths;
+}
+.card-menu:nth-child(1) {
+  animation-delay: 100ms;
+}
+.card-menu:nth-child(2) {
+  animation-delay: 200ms;
+}
+.card-menu:nth-child(3) {
+  animation-delay: 300ms;
+}
+.card-menu:nth-child(4) {
+  animation-delay: 400ms;
+}
+.card-menu:nth-child(5) {
+  animation-delay: 500ms;
+}
+.card-menu:nth-child(6) {
+  animation-delay: 600ms;
+}
+.card-menu:nth-child(7) {
+  animation-delay: 700ms;
+}
+.card-menu:nth-child(8) {
+  animation-delay: 800ms;
+}
+.card-menu:nth-child(9) {
+  animation-delay: 900ms;
+}
+.card-menu:nth-child(10) {
+  animation-delay: 1000ms;
 }
 
 .card-menu-content {
