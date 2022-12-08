@@ -35,11 +35,50 @@
     }
     .circle1 {
       /* border: 2px solid red; */
-      border-top: 2px solid #99E2D0;
+      border-top: 10px solid #99E2D0;
+      position: absolute;
       border-radius: 50%;
       width: 300px;
       height: 300px;
       animation: spin1 2s linear infinite;
     }
+      .circle2 {
+      border-bottom: 10px solid #99E2D0;
+      position: absolute;
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      animation: spin1 2s linear infinite;
+    }
+  }
+}
+
+
+.loupe {
+  width: 100px;
+  position: absolute;
+  animation: loupe 3s infinite;
+  svg path {
+    fill: #99E2D0;
+  }
+}
+
+// @keyframes loupe {
+//   0% {
+//     transform: translate(-50%, -50%) scale(1);
+//   }
+//   50% {
+//     transform: translate(-50%, -50%) scale(1.2);
+//   }
+//   100% {
+//     transform: translate(-50%, -50%) scale(1);
+//   }
+// }
+@keyframes loupe {
+  0% {
+    transform: rotate(0deg) ;
+  }
+  100% {
+    transform: rotate(359deg);
   }
 }

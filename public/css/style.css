@@ -29,6 +29,7 @@ footer .footer-container {
   flex-direction: column;
   margin-left: 5%;
   gap: 5px;
+  padding: 20px 0 20px 0;
 }
 footer svg path {
   fill: white;
@@ -36,6 +37,16 @@ footer svg path {
 footer a {
   color: white;
   text-decoration: white;
+}
+
+.footer-first-two a {
+  display: flex;
+  width: 50%;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.footer-first-two i {
+  width: 9%;
 }
 
 /* NAVBAR */
@@ -94,13 +105,39 @@ nav .arrow-header {
 }
 .loader__container .circle1 {
   /* border: 2px solid red; */
-  border-top: 2px solid #99E2D0;
+  border-top: 10px solid #99E2D0;
+  position: absolute;
   border-radius: 50%;
   width: 300px;
   height: 300px;
   animation: spin1 2s linear infinite;
 }
+.loader__container .circle2 {
+  border-bottom: 10px solid #99E2D0;
+  position: absolute;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  animation: spin1 2s linear infinite;
+}
 
+.loupe {
+  width: 100px;
+  position: absolute;
+  animation: loupe 3s infinite;
+}
+.loupe svg path {
+  fill: #99E2D0;
+}
+
+@keyframes loupe {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
 @keyframes appear {
   0% {
     transform: scale(0);
@@ -133,16 +170,6 @@ nav .arrow-header {
   }
   100% {
     transform: rotate(360deg);
-  }
-}
-@keyframes slideRight {
-  from {
-    transform: translateX(10px);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0px);
-    opacity: 1;
   }
 }
 .card-container {
@@ -199,7 +226,7 @@ nav .arrow-header {
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  width: 150px;
+  width: 200px;
 }
 
 .heart-btn {
@@ -464,6 +491,7 @@ nav i {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  position: relative;
 }
 .card-menu-content .card-menu-infos {
   display: flex;
@@ -484,26 +512,6 @@ nav i {
 }
 .card-menu-content .card-menu-price h3 {
   font-weight: 500;
-}
-.card-menu-content .anim {
-  display: none;
-  background-color: green;
-  width: 20%;
-  transition: 0.5s;
-  animation: slideRight 2s;
-}
-.card-menu-content:hover .anim {
-  display: block;
-}
-@keyframes slideRight {
-  from {
-    transform: translateX(10px);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0px);
-    opacity: 1;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
