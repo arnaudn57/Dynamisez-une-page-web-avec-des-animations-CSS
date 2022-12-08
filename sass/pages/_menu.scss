@@ -77,11 +77,6 @@ nav {
   @include flex-column;
   gap: 15px;
   margin-top: 15px;
-  // @for $i from 1 through 10 {
-  //   &:nth-child(#{$i}){
-  //     animation-delay: 100ms * $i;
-  //   }
-  // }
 }
 .card-menu {
   background-color: white;
