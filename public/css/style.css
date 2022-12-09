@@ -107,20 +107,7 @@ nav .arrow-header {
   color: #99E2D0;
   font-weight: 500;
 }
-.loader__container #dots_un {
-  animation: dots 1s infinite;
-  color: #99E2D0;
-}
-.loader__container #dots_deux {
-  animation: dots 2s infinite;
-  color: #99E2D0;
-}
-.loader__container #dots_trois {
-  animation: dots 3s infinite;
-  color: #99E2D0;
-}
 .loader__container .circle1 {
-  /* border: 2px solid red; */
   border-top: 10px solid #99E2D0;
   position: absolute;
   border-radius: 50%;
@@ -176,14 +163,6 @@ nav i {
     visibility: visible;
   }
 }
-@keyframes dots {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 @keyframes spin1 {
   0% {
     transform: rotate(0deg);
@@ -198,6 +177,19 @@ nav i {
   }
   100% {
     transform: rotate(359deg);
+  }
+}
+@keyframes spin360 {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: rotate(359deg);
+    opacity: 1;
   }
 }
 .card-container {
@@ -253,7 +245,6 @@ nav i {
   border: none;
   padding: 15px;
   border-radius: 50px;
-  font-family: "Roboto", sans-serif;
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -356,9 +347,9 @@ body {
 }
 .fonctionnements__container-step-content {
   display: flex;
+  justify-content: center;
   width: 100%;
   height: 100%;
-  justify-content: center;
   align-items: center;
   border-radius: 20px;
 }
@@ -458,6 +449,7 @@ body {
 }
 
 .card-menu {
+  position: relative;
   background-color: white;
   width: 100%;
   border-radius: 20px;
@@ -519,6 +511,38 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   height: 55px;
+  width: 50px;
+  transition: all 0.6s ease;
+}
+
+.animate {
+  position: absolute;
+  right: 0;
+  background-color: rgb(169, 224, 209);
+  width: 0;
+  height: 100%;
+  transition: all 0.5s ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.animate i {
+  font-size: 30px;
+  color: white;
+  opacity: 0;
+}
+
+.card-menu:hover .animate {
+  width: 100px;
+}
+.card-menu:hover .animate i {
+  animation: spin360 0.5s;
+  animation-fill-mode: forwards;
+}
+.card-menu:hover .card-menu-price {
+  width: 120px;
 }
 
 /*# sourceMappingURL=style.css.map */

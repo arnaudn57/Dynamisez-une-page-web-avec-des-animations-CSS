@@ -4,9 +4,7 @@
   border: none;
   padding: 15px;
   border-radius: 50px;
-  font-family: 'Roboto', sans-serif;
-  display: flex;
-  justify-content: center;
+  @include display-center;
   margin: 0 auto;
   width: 200px;
 }

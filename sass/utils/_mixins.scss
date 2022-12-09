@@ -2,3 +2,22 @@
   display: flex;
   flex-direction: column;
 }
+
+@mixin display-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin display-center {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin circle($width, $height, $border) {
+  border-#{$border}: 10px solid #99E2D0;
+  position: absolute;
+  border-radius: 50%;
+  width: $width;
+  height: $height;
+  animation: spin1 2s linear infinite;
+}

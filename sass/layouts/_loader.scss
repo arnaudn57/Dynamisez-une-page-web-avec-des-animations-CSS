@@ -1,3 +1,5 @@
+@import "../utils/mixins";
+
 .loader {
   background-color: #FF79DA;
   height: 100%;
@@ -10,8 +12,7 @@
   animation-iteration-count: 1;
   visibility: hidden;
   &__container {
-    display: flex;
-    justify-content: center;
+    @include display-center;
     margin: 0 auto;
     height: 100vh;
     align-items: center;
@@ -20,35 +21,12 @@
       color: #99E2D0;
       font-weight: 500;
     }
-    #dots_un {
-      animation: dots 1s infinite;
-      color: #99E2D0;
-    }
-    #dots_deux {
-      animation: dots 2s infinite;
-      color: #99E2D0;
-    }
 
-    #dots_trois {
-      animation: dots 3s infinite;
-      color: #99E2D0;
-    }
     .circle1 {
-      /* border: 2px solid red; */
-      border-top: 10px solid #99E2D0;
-      position: absolute;
-      border-radius: 50%;
-      width: 300px;
-      height: 300px;
-      animation: spin1 2s linear infinite;
+      @include circle(300px, 300px, top);
     }
       .circle2 {
-      border-bottom: 10px solid #99E2D0;
-      position: absolute;
-      border-radius: 50%;
-      width: 200px;
-      height: 200px;
-      animation: spin1 2s linear infinite;
+      @include circle(200px, 200px, bottom);
     }
   }
 }
