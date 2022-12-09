@@ -38,6 +38,9 @@
       height: 70px;
       @include flex-column;
       justify-content: center;
+      p {
+        font-weight: 100;
+      }
     }
 
     .card-fav {

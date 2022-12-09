@@ -1,0 +1,13 @@
+nav {
+  .nav-menu {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    color: black;
+    align-items: center;
+    width: 80%;
+  }
+  i {
+      visibility: visible; ;
+    }
+}

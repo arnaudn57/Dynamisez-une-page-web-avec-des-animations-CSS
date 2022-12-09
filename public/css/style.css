@@ -19,6 +19,22 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Shrikhand";
+}
+
+h2 {
+  font-weight: 100;
+}
+
+h3 {
+  font-weight: 500;
+}
+
 footer {
   background-color: rgb(53, 53, 53);
   width: 100%;
@@ -130,14 +146,18 @@ nav .arrow-header {
   fill: #99E2D0;
 }
 
-@keyframes loupe {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(359deg);
-  }
+nav .nav-menu {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  color: black;
+  align-items: center;
+  width: 80%;
 }
+nav i {
+  visibility: visible;
+}
+
 @keyframes appear {
   0% {
     transform: scale(0);
@@ -218,6 +238,9 @@ nav .arrow-header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.card-container .card-infos .card-desc p {
+  font-weight: 100;
 }
 .card-container .card-infos .card-fav {
   display: flex;
@@ -306,6 +329,9 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
 }
+.fonctionnements h2 {
+  font-weight: 700;
+}
 .fonctionnements__container {
   display: flex;
   flex-direction: column;
@@ -372,27 +398,12 @@ body {
 }
 .restaurants h2 {
   margin-top: 40px;
+  font-weight: 700;
 }
 .restaurants .restaurant {
   width: 100%;
   box-shadow: 6px 7px 7px 1px rgba(0, 0, 0, 0.12);
   border-radius: 20px;
-}
-
-a {
-  text-decoration: none;
-}
-
-nav .nav-menu {
-  display: flex;
-  justify-content: space-around;
-  text-decoration: none;
-  color: black;
-  align-items: center;
-  width: 80%;
-}
-nav i {
-  visibility: visible;
 }
 
 .menu-header img {
@@ -424,9 +435,6 @@ nav i {
   padding-top: 20px;
   align-items: center;
 }
-.menu-container-head h1 {
-  font-family: "Shrikhand";
-}
 .menu-container-head i {
   font-size: 35px;
   font-weight: 100;
@@ -434,9 +442,6 @@ nav i {
 
 .menu-parts {
   margin-top: 30px;
-}
-.menu-parts h2 {
-  font-weight: 100;
 }
 .menu-parts hr {
   width: 55px;
@@ -506,9 +511,6 @@ nav i {
   flex-direction: column;
   justify-content: center;
 }
-.card-menu-content .card-menu-infos h3 {
-  font-weight: 500;
-}
 .card-menu-content .card-menu-infos p {
   font-weight: 100;
 }
@@ -517,9 +519,6 @@ nav i {
   flex-direction: column;
   justify-content: flex-end;
   height: 55px;
-}
-.card-menu-content .card-menu-price h3 {
-  font-weight: 500;
 }
 
 /*# sourceMappingURL=style.css.map */

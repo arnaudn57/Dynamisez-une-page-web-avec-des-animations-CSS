@@ -47,6 +47,9 @@ body {
   height: 350px;
   @include flex-column;
   justify-content: space-evenly;
+  h2 {
+    font-weight: 700;
+  }
 
     &__container {
       @include flex-column;
@@ -116,6 +119,7 @@ body {
 
   h2 {
     margin-top: 40px;
+    font-weight: 700;
   }
 
   .restaurant {
