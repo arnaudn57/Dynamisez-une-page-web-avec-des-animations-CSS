@@ -242,6 +242,7 @@ nav i {
 .btn {
   background: linear-gradient(350deg, rgb(147, 86, 220) 35%, rgb(255, 121, 218) 100%);
   color: white;
+  box-shadow: 6px 7px 7px 1px rgba(0, 0, 0, 0.12);
   border: none;
   padding: 15px;
   border-radius: 50px;
@@ -458,7 +459,6 @@ body {
   height: 70px;
   box-shadow: 6px 7px 7px 1px rgba(0, 0, 0, 0.12);
   animation: appear 1s;
-  animation-fill-mode: boths;
 }
 .card-menu:nth-child(1) {
   animation-delay: 100ms;
