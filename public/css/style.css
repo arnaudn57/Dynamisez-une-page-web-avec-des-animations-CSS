@@ -452,11 +452,7 @@ body {
   justify-content: space-between;
   padding-top: 20px;
   align-items: center;
-}
-@media only screen and (min-width: 1200px) {
-  .menu-container-head {
-    margin: 0 5%;
-  }
+  margin: 0 5%;
 }
 .menu-container-head i {
   font-size: 35px;
