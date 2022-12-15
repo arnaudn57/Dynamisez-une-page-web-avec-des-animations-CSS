@@ -47,6 +47,10 @@ body {
   height: 350px;
   @include flex-column;
   justify-content: space-evenly;
+
+  @include responsive(desktop){
+    height: 250px;
+  }
   h2 {
     font-weight: 700;
   }
@@ -56,6 +60,11 @@ body {
       justify-content: center;
       text-align: center;
       gap: 10px;
+      @include responsive(desktop){
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+      }
     }
     &__container-step {
     background-color: $bg-white;
@@ -103,6 +112,7 @@ body {
   background-color: $bg-white;
   padding-bottom: 70px;
 
+
   a {
     text-decoration: none;
     color: black;
@@ -112,12 +122,18 @@ body {
     justify-content: center;
     width: 90%;
     margin: 0 auto;
-    gap:20px
+    gap:20px;
+
+    @include responsive(desktop){
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   h2 {
-    margin-top: 40px;
+    padding: 40px 0 40px 0;
     font-weight: 700;
+    margin-left: 5%;
   }
 
   .restaurant {
