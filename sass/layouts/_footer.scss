@@ -22,11 +22,12 @@ footer {
 .footer-first-two {
   a {
     display: flex;
-    width: 50%;
+    width: 80%;
     justify-content: flex-start;
     gap: 10px;
   }
   i {
-  width: 9%;
+    width: 20px;
+    font-size: 14px;
   }
 }
