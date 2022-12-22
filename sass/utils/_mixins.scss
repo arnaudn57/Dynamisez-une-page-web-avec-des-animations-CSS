@@ -50,11 +50,14 @@ $truncate_text : 0;
 @mixin responsive ($breakpoint) { //the name of the mixin is devices
 
   @if $breakpoint == desktop {
-    @media only screen and (min-width: 1200px) {
+    @media only screen and (min-width: 1270px) {
       @content;
     }
   }
 
-
-
+  @if $breakpoint == tablet {
+    @media only screen and (max-width: 380px) {
+      @content;
+    }
+  }
 }

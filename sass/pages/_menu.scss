@@ -101,6 +101,11 @@
     justify-content: center;
     p {
       font-weight: 100;
+      font-size: 15px;
+    }
+    .meal-name {
+      font-weight: 600;
+      font-size: 18px;
     }
   }
 
@@ -111,6 +116,9 @@
     width: 50px;
     transition: all 0.6s ease;
     text-align: center;
+    .price {
+      font-weight: 600;
+    }
   }
 }
 
@@ -133,7 +141,6 @@
   }
 }
 
-
 .card-menu:hover {
   .animate {
     width: 70px;
@@ -143,6 +150,20 @@
     }
   }
   .card-menu-price {
-    width: 200px;
+    // width: 200px;
+    margin-right: 50px;
+  }
+  @include responsive(tablet) {
+    .card-menu-infos > p {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      max-width: 200px;
+    }
+  }
+  @include responsive(desktop) {
+    .card-menu-infos > p {
+      max-width: 100%;
+    }
   }
 }

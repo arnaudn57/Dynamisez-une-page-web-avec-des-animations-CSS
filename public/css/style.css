@@ -27,7 +27,7 @@ h1 {
   font-family: "Shrikhand";
 }
 
-h2 {
+h3 {
   font-weight: 100;
 }
 
@@ -167,14 +167,6 @@ nav i {
   }
   100% {
     transform: rotate(360deg);
-  }
-}
-@keyframes loupe {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(359deg);
   }
 }
 @keyframes spin360 {
@@ -322,7 +314,7 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1270px) {
   .fonctionnements {
     height: 250px;
   }
@@ -337,7 +329,7 @@ body {
   text-align: center;
   gap: 10px;
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1270px) {
   .fonctionnements__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -401,7 +393,7 @@ body {
   margin: 0 auto;
   gap: 20px;
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1270px) {
   .restaurants__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -425,7 +417,7 @@ body {
   height: 350px;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1270px) {
   .menu-header h1 {
     position: absolute;
     top: 15%;
@@ -453,7 +445,7 @@ body {
   margin: 0 auto;
   margin-bottom: 40px;
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1270px) {
   .menu-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -472,7 +464,7 @@ body {
   font-size: 35px;
   font-weight: 100;
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1270px) {
   .menu-container-head h1 {
     visibility: hidden;
   }
@@ -551,6 +543,11 @@ body {
 }
 .card-menu-content .card-menu-infos p {
   font-weight: 100;
+  font-size: 15px;
+}
+.card-menu-content .card-menu-infos .meal-name {
+  font-weight: 600;
+  font-size: 18px;
 }
 .card-menu-content .card-menu-price {
   display: flex;
@@ -560,6 +557,9 @@ body {
   width: 50px;
   transition: all 0.6s ease;
   text-align: center;
+}
+.card-menu-content .card-menu-price .price {
+  font-weight: 600;
 }
 
 .animate {
@@ -589,7 +589,20 @@ body {
   animation-fill-mode: forwards;
 }
 .card-menu:hover .card-menu-price {
-  width: 200px;
+  margin-right: 50px;
+}
+@media only screen and (max-width: 380px) {
+  .card-menu:hover .card-menu-infos > p {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 200px;
+  }
+}
+@media only screen and (min-width: 1270px) {
+  .card-menu:hover .card-menu-infos > p {
+    max-width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
