@@ -568,7 +568,7 @@ body {
   background-color: rgb(169, 224, 209);
   width: 0;
   height: 100%;
-  transition: all 0.5s ease-out;
+  transition: all 0.3s ease-out;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -579,6 +579,11 @@ body {
   font-size: 30px;
   color: white;
   opacity: 0;
+}
+
+.card-menu-infos > p {
+  width: 250px;
+  transition: all 0.5s ease;
 }
 
 .card-menu:hover .animate {
