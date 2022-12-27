@@ -105,7 +105,8 @@
     }
     .meal-name {
       font-weight: 600;
-      font-size: 18px;
+      font-size: 15px;
+
     }
   }
 
@@ -144,6 +145,9 @@
 .card-menu-infos > p {
   width: 250px;
   transition: all 0.5s ease;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .card-menu:hover {
