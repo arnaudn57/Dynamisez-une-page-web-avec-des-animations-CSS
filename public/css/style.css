@@ -25,6 +25,7 @@ a {
 
 h1 {
   font-family: "Shrikhand";
+  font-size: 26px;
 }
 
 h3 {
@@ -262,6 +263,10 @@ nav i {
 
 .fa-regular {
   font-weight: bolder !important;
+}
+
+.heart-menu {
+  -webkit-text-fill-color: transparent;
 }
 
 /* HEADLINE */
@@ -541,9 +546,20 @@ body {
   position: relative;
 }
 .card-menu-content .card-menu-infos {
+  width: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+@media only screen and (min-width: 1270px) {
+  .card-menu-content .card-menu-infos {
+    width: 283px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .card-menu-content .card-menu-infos {
+    width: 500px;
+  }
 }
 .card-menu-content .card-menu-infos p {
   font-weight: 100;
@@ -586,7 +602,6 @@ body {
 }
 
 .card-menu-infos > p {
-  width: 250px;
   transition: all 0.5s ease;
   white-space: nowrap;
   text-overflow: ellipsis;
