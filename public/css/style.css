@@ -360,11 +360,15 @@ body {
 }
 .fonctionnements__container-step-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 70%;
   height: 100%;
   align-items: center;
   border-radius: 20px;
+}
+.fonctionnements__container-step-content > p {
+  width: 200px;
+  text-align: start;
 }
 .fonctionnements .badge {
   position: absolute;
