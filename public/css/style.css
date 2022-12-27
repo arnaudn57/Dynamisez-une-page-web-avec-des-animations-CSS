@@ -608,6 +608,11 @@ body {
   overflow: hidden;
 }
 
+@media only screen and (min-width: 1270px) {
+  .card-menu:hover .card-menu-infos > p {
+    width: 250px;
+  }
+}
 .card-menu:hover .animate {
   width: 70px;
 }

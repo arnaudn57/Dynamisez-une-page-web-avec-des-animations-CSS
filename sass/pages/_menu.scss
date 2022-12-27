@@ -17,7 +17,6 @@
     background:rgba(0,0,0,.7);
     padding : 15px;
     border-radius: $border-radius-card;
-    // box-shadow:10px 10px 10px 10px rgba(0,0,0,.4);
   }
 }
 
@@ -113,7 +112,6 @@
     .meal-name {
       font-weight: 600;
       font-size: 15px;
-
     }
   }
 
@@ -158,6 +156,11 @@
 }
 
 .card-menu:hover {
+  .card-menu-infos > p {
+    @include responsive (desktop){
+      width: 250px;
+    }
+  }
   .animate {
     width: 70px;
     i {
