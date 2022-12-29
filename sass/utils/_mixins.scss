@@ -56,7 +56,7 @@ $truncate_text : 0;
   }
 
   @if $breakpoint == tablet {
-    @media only screen and (max-width: 380px) {
+    @media only screen and (min-width: 380px) {
       @content;
     }
   }

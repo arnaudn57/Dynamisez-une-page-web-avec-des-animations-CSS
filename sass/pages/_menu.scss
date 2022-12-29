@@ -148,7 +148,6 @@
 }
 
 .card-menu-infos > p {
-  // width: 250px;
   transition: all 0.5s ease;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -169,7 +168,7 @@
     }
   }
   .card-menu-price {
-    margin-right: 50px;
+    margin-right: 60px;
   }
   @include responsive(tablet) {
     .card-menu-infos > p {

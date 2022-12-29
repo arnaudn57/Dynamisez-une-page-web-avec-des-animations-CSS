@@ -20,6 +20,7 @@ body {
     height: 250px;
     justify-content: center;
     background-color: $bg-white;
+    padding-bottom: 25px;
   }
 
   &__search-container {
@@ -45,6 +46,7 @@ body {
   width: 90%;
   margin: 0 auto;
   height: 350px;
+  padding-bottom: 25px;
   @include flex-column;
   justify-content: space-evenly;
 
@@ -90,7 +92,7 @@ body {
   }
 
   &__container-step-content {
-    @include display-between;
+    @include display-around;
     width: 70%;
     height: 100%;
     align-items: center;

@@ -42,7 +42,7 @@ footer .footer-container {
   flex-direction: column;
   margin-left: 5%;
   gap: 5px;
-  padding: 20px 0 20px 0;
+  padding: 20px 0 30px 0;
 }
 footer svg path {
   fill: white;
@@ -125,7 +125,7 @@ nav .arrow-header {
 .loupe {
   width: 100px;
   position: absolute;
-  animation: loupe 3s infinite;
+  animation: sablier 3s infinite;
 }
 .loupe svg path {
   fill: #99E2D0;
@@ -181,6 +181,14 @@ nav i {
   100% {
     transform: rotate(359deg);
     opacity: 1;
+  }
+}
+@keyframes sablier {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 .card-container {
@@ -292,6 +300,7 @@ body {
   height: 250px;
   justify-content: center;
   background-color: rgb(247, 247, 247);
+  padding-bottom: 25px;
 }
 .headline__search-container {
   text-align: center;
@@ -315,6 +324,7 @@ body {
   width: 90%;
   margin: 0 auto;
   height: 350px;
+  padding-bottom: 25px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -365,7 +375,7 @@ body {
 }
 .fonctionnements__container-step-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 70%;
   height: 100%;
   align-items: center;
@@ -556,7 +566,7 @@ body {
     width: 283px;
   }
 }
-@media only screen and (max-width: 380px) {
+@media only screen and (min-width: 380px) {
   .card-menu-content .card-menu-infos {
     width: 500px;
   }
@@ -621,9 +631,9 @@ body {
   animation-fill-mode: forwards;
 }
 .card-menu:hover .card-menu-price {
-  margin-right: 50px;
+  margin-right: 60px;
 }
-@media only screen and (max-width: 380px) {
+@media only screen and (min-width: 380px) {
   .card-menu:hover .card-menu-infos > p {
     white-space: nowrap;
     text-overflow: ellipsis;
