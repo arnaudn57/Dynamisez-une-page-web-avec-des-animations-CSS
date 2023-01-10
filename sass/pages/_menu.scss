@@ -88,7 +88,7 @@
   @include display-between;
   height: 70px;
   box-shadow: $box-shadow;
-  animation: appear 1s;
+  animation: appear 1.5s;
   @for $i from 1 through 10 {
     &:nth-child(#{$i}){
       animation-delay: 100ms * $i;
