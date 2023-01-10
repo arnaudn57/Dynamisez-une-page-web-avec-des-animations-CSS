@@ -252,6 +252,12 @@ nav i {
   justify-content: center;
   margin: 0 auto;
   width: 200px;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  box-shadow: 6px 7px 7px 1px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(350deg, rgb(193, 140, 255) 35%, rgb(255, 121, 218) 100%);
 }
 
 .heart-btn {
